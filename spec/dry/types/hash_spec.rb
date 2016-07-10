@@ -52,7 +52,7 @@ RSpec.describe Dry::Types::Hash do
       end
 
       module Test
-        class Location < Dry::Types::Value
+        class Location < Dry::Struct::Value
           attributes(lat: 'float', lng: 'float')
         end
       end

@@ -40,7 +40,7 @@ RSpec.describe Dry::Types::Array do
     context 'struct' do
       it 'uses struct constructor for member values' do
         module Test
-          class User < Dry::Types::Struct
+          class User < Dry::Struct
             attribute :name, 'string'
           end
         end
